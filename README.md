@@ -4,31 +4,27 @@
 
 The `mask detector` folder included files needed to train the model and as well to detect mask wearing conditions on either still pictures or live webcam capture
 
----
-
+***
 - **`dataset`** folder included `correct`, `incorrect`, `without` folder  which contains sample images used to train for the model classifier 
 - **`face_detector`** folder included DNN model for face detector and its deploy.prototxt
-  - >> It is used to detect face and draw the region of interest (ROI) in the process of detecting the mask-wearing condition
+  - It is used to detect face and draw the region of interest (ROI) in the process of detecting the mask-wearing condition
 - **`output`** folder contains images and and animated GIF result to show the mask wearing conditions on both still picture and on webcam respectively
 - `model.h5` is the outcome from `train_mask_detection_model.py` -- our script used to train the model for mask-wearing condition
-   - >> It is loaded and used in `properTak_mask_detector.py` -- our script file to detect mask-wearing conditions on both picture and live webcam feed 
-
----
-
+   - It is loaded and used in `properTak_mask_detector.py` -- our script file to detect mask-wearing conditions on both picture and live webcam feed 
+***
 - **`mask-to-face`** folder included files needed to generate different scenarios of mask-wearing pictures such as:
-  - *Correct Situation* ✅
+  - **Correct Situation** ✅
     - Nose, Mouth, Chin are all fully covered
-  - *Incorrect Situation* ❎
+  - **Incorrect Situation** ❎
     - Nose not fully covered
     - Nose not covered at all
     - Only mouth covered
     - Below chin
 - **`generated`** folder contains sample mask-wearing images generated using mask-to-face mapping technique
 - `shape_predictor_68_face_landmarks.dat` is the module by **dlib** which will return 68 face landmarks on detected human faces
-  - >> It is really useful in providing a boundary that helps to map the face mask on human faces.
+  - It is really useful in providing a boundary that helps to map the face mask on human faces.
 - `apply_mask_to_face.py` is the Python script used to simulate different mask wearing conditions with thw help of **dlib** and **OpenCV**
-
----
+***
 
 ```
 properTak/
@@ -98,12 +94,12 @@ properTak/
 
 ### Training Dataset
 1. [MaskedFace-Net](https://github.com/cabani/MaskedFace-Net)
->> `correct` folder images provided by Correctly Masked Face Dataset (CMFD) of MaskedFace-Net
+    > `correct` folder images provided by Correctly Masked Face Dataset (CMFD) of MaskedFace-Net
 
->> `incorrect` folder images provided by Incorrectly Masked Face Dataset (IMFD) of MaskedFace-Net
+    > `incorrect` folder images provided by Incorrectly Masked Face Dataset (IMFD) of MaskedFace-Net
 
 2. [Flickr-Faces-HQ Dataset (FFHQ)](https://github.com/NVlabs/ffhq-dataset)
->> `without` folder images provider
+    > `without` folder images provider
 
 ### Dlib 68 Face Landmarks
 [shape_predictor_68_face_landmarks.dat](http://dlib.net/files/shape_predictor_68_face_landmarks.dat.bz2)
@@ -114,5 +110,4 @@ properTak/
 
 ## Output
 
-![Demo](/mask detector/output/Result on live webcam feed.gif)
-
+![Demo]("/mask detector/output/Result on live webcam feed.gif")
