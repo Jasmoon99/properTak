@@ -110,4 +110,4 @@ properTak/
 
 ## Output
 
-![Demo]("/mask detector/output/Result on live webcam feed.gif")
+![Demo](https://github.com/Jasmoon99/properTak/blob/main/mask%20detector/output/Result%20on%20live%20webcam%20feed.gif)
