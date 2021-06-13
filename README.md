@@ -116,14 +116,14 @@ It really helps in setting up the environment for TensorFlow to run with GPU and
 1. Head to the [Anaconda](https://www.anaconda.com/products/individual) website and downlad the installer package
 2. Follow the instructions to install the Anaconda
 3. Then, create an environment of TensorFlow with GPU following this [tutorial](https://docs.anaconda.com/anaconda/user-guide/tasks/tensorflow/)
-  > **Some reference**: [Conda command cheatsheet](https://docs.conda.io/projects/conda/en/4.6.0/_downloads/52a95608c49671267e40c689e0bc00ca/conda-cheatsheet.pdf#page=1&zoom=auto,-373,618)
+    > **Some reference**: [Conda command cheatsheet](https://docs.conda.io/projects/conda/en/4.6.0/_downloads/52a95608c49671267e40c689e0bc00ca/conda-cheatsheet.pdf#page=1&zoom=auto,-373,618)
 
-### How to download packages that are not available by default (e.g. dlib) 
+### How to download packages that are not available by default? (e.g. dlib) 
 1. Search packages directly on [ANACONDA.ORG](https://anaconda.org/) | [CONDA-FORGE](https://conda-forge.org/feedstock-outputs/)
 2. Then, click on the packages to get the conda command
 3. To install, simply copy the command and run it in Anaconda Prompt, *provided you're in the environment you have created for this project*.
 
-## How to configure the Conda interpreter in PyCharm
+### How to configure the Conda interpreter in PyCharm?
 [Tutorial](https://www.jetbrains.com/help/pycharm/conda-support-creating-conda-virtual-environment.html)
 
 ## Output
